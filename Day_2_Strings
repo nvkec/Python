@@ -1,0 +1,86 @@
+Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 21:26:53) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> n = 25
+>>> m=20
+>>> print(n+m)
+45
+>>> print(type(m))
+<class 'int'>
+>>> print(n-m)
+5
+>>> print(n/m)
+1.25
+>>> print(n**m)
+9094947017729282379150390625
+>>> print(n%m)
+5
+>>> num1=float(input(Enter the first number))
+SyntaxError: invalid syntax
+>>> num1=float(input("Enter the first number :"))
+Enter the first number :25
+>>> num2=float(input("Enter the second number :"))
+Enter the second number :20
+>>> res = num1+num2
+>>> print("The result is  ", res)
+The result is   45.0
+>>> 
+============== RESTART: C:/Users/vn7/Desktop/Python/Addition.py ==============
+Enter the first number :25
+Enter the second number :20
+The result is   45.0
+Press any key to exit :
+>>> 
+============== RESTART: C:\Users\vn7\Desktop\Python\Addition.py ==============
+Enter the first number :1
+Enter the second number :1
+The result is   2.0
+Press any key to exit :
+>>> x="Hello World"
+>>> y='Hello World'
+>>> print(x)
+Hello World
+>>> print(y)
+Hello World
+>>> print(x.upper())
+HELLO WORLD
+>>> print(y.lower())
+hello world
+>>> print(len(x))
+11
+>>> print(x.isupper())
+False
+>>> print(x.islower())
+False
+>>> z="AAA"
+>>> print(z.isupper())
+True
+>>> x="Python Training is fun"
+>>> print(len(x))
+22
+>>> print(x[0:6])
+Python
+>>> print(x[0:5])
+Pytho
+>>> print(x[0::2])
+Pto riigi u
+>>> print(x[::3])
+Ph ai  n
+>>> print(x[-18::-3])
+oy
+>>> print(x[-18:-3])
+on Training is 
+>>> y=x.replace("Fun","Boring")
+>>> print(y)
+Python Training is fun
+>>> y=x.split(" ")
+>>> print(y)
+['Python', 'Training', 'is', 'fun']
+>>> for i in y:
+	print(i)
+
+	
+Python
+Training
+is
+fun
+>>> 
