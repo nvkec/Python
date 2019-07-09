@@ -1,0 +1,192 @@
+Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 21:26:53) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> x=10
+>>> y=5
+>>> 
+>>> 
+>>> print(x+y)
+15
+>>> print(x-y)
+5
+>>> print(x/y)
+2.0
+>>> print(x*y)
+50
+>>> x=10
+>>> y=5
+>>> print(x>y)
+True
+>>> print(x<y)
+False
+>>> print(x==y)
+False
+>>> print(x>=y)
+True
+>>> print(x<=y)
+False
+>>> print(x!=y)
+True
+>>> x=True
+>>> y=False
+>>> print(x and y)
+False
+>>> print(x or y)
+True
+>>> print(x not y)
+SyntaxError: invalid syntax
+>>> print(not  y)
+True
+>>> Assignment Operators
+SyntaxError: invalid syntax
+>>> a=5
+>>> a+=5
+>>> a=a+5
+>>> a-=5
+>>> a=a-5
+>>> #identity operators
+>>> x1=5
+>>> y1=5
+>>> x2="Hello"
+>>> y2="Hello"
+>>> x3=[1,2,3]
+>>> y3=[1,2,3]
+>>> 
+>>> print(x1 is y1)
+True
+>>> print(x3 is y3)
+False
+>>> print(id(x3))
+38641336
+>>> print(id(y3))
+47791880
+>>> #Membership Operators
+>>> 
+>>> 
+>>> 
+
+
+>>> 
+>>> 
+
+>>> 
+>>> a="Hello World"
+>>> b=[1,2,3,4,5]
+>>> print("l" in a)
+True
+>>> print(4 in b)
+True
+>>> print(9 in b)
+False
+>>> print(9 not in b)
+True
+>>> 
+>>> 
+>>> 
+============ RESTART: C:/Users/vn7/Desktop/Python/Conditional.py ============
+Enter the first number :0
+Number is Negative
+Press any key to exit
+>>> 
+============ RESTART: C:/Users/vn7/Desktop/Python/Conditional.py ============
+Enter the first number :12
+Number is Positive
+Press any key to exit
+>>> 
+============ RESTART: C:/Users/vn7/Desktop/Python/Conditional.py ============
+Enter the first number :-1
+Number is Negative
+Press any key to exit
+>>> 
+============ RESTART: C:/Users/vn7/Desktop/Python/Conditional.py ============
+Enter the first number :7
+Number is Positive
+Press any key to exit
+Enter the name :Anuj
+Working in Microosft
+>>> 
+============ RESTART: C:/Users/vn7/Desktop/Python/Conditional.py ============
+Enter the first number :5
+Number is Positive
+Press any key to exit
+Enter the name :tttt
+Company not listed
+Number is even
+>>> 2
+2
+>>> #List
+>>> 
+>>> a=[]
+>>> a
+[]
+>>> a=[1,2,3,4]
+>>> a
+[1, 2, 3, 4]
+>>> type(a)
+<class 'list'>
+>>> a[1]
+2
+>>> a=[1,2,3,'Prady',"Hello".12.5]
+SyntaxError: invalid syntax
+>>> a=[1,2,3,'Prady',"Hello",12.5]
+>>> a
+[1, 2, 3, 'Prady', 'Hello', 12.5]
+>>> a[4]
+'Hello'
+>>> a[0:3]
+[1, 2, 3]
+>>> a[-5:-1]
+[2, 3, 'Prady', 'Hello']
+>>> [2, 3, 'Prady', 'Hello']a[-1]
+SyntaxError: invalid syntax
+>>> a[-1]
+12.5
+>>> del a[3]
+>>> a
+[1, 2, 3, 'Hello', 12.5]
+>>> a.insert(1,4)
+>>> a
+[1, 4, 2, 3, 'Hello', 12.5]
+>>> c=[1,2,3]
+>>> d=c
+>>> d
+[1, 2, 3]
+>>> f=[3,1,4,5,6,8,10]
+>>> f.sort()
+>>> f
+[1, 3, 4, 5, 6, 8, 10]
+>>> f.reverse()
+>>> f
+[10, 8, 6, 5, 4, 3, 1]
+>>> 
+
+=======================================================================================================================================
+#ifelse
+num=float(input("Enter the first number :"))
+if num > 0:
+    print("Number is Positive")
+else:
+    print("Number is Negative")
+
+input("Press any key to exit")   
+    
+
+#elif          
+name=input("Enter the name :")
+if name=="Anuj":
+    print("Working in Microosft")
+elif name=="Madhu":
+    print("Working in Google")
+elif name=="Nikhila":
+    print("Working in Intel")
+else:
+    print("Company not listed")
+
+#Nestedif
+num=4
+if num>0:
+    if num%2==0:
+        print("Number is even")
+    else:
+        print("Number is Odd")
+else:
+    print("Enter number greater than Zero")
