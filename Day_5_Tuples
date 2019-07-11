@@ -1,0 +1,267 @@
+Tuples
+
+a=(1,2,3,4,'abc','ser')
+print(type(a))
+print(a)
+
+a=(1,2,3,4,'abc','ser',[1,2,3])
+print(a)
+
+b=1,2,'abc','bcd'
+print(type(b))
+a,e,c,d=b
+print(a)
+print(e)
+print(c)
+print(d)
+
+x=(1,)
+print(type(x))
+
+print(a[0:6])
+print(a[:])
+
+del a[3]
+
+a=(1,2,3,[4,5])
+a[3][1]=9
+print(a)
+
+a=[[1,2,3],[4,5,6]]
+a[1][1]=9
+print(a)
+
+x=(1,2,3,[4,5])
+y=(2,3,4)
+z=x+y
+print(z)
+
+for i in z:
+    print(i)
+
+print(z.count(2))
+print(z.index(3))
+
+a=[[1,2,3],["abc"],[5,6,7,8,9]]
+for i in a:
+    for j in i:
+        print(j)
+        
+        
+ ============================================================================================================================
+
+Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 21:26:53) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+<class 'tuple'>
+(1, 2, 3, 4, 'abc', 'ser')
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+<class 'tuple'>
+(1, 2, 3, 4, 'abc', 'ser')
+(1, 2, 3, 4, 'abc', 'ser', [1, 2, 3])
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+<class 'tuple'>
+(1, 2, 3, 4, 'abc', 'ser')
+(1, 2, 3, 4, 'abc', 'ser', [1, 2, 3])
+Traceback (most recent call last):
+  File "C:/Users/vn7/Desktop/Python/Tuple.py", line 11, in <module>
+    a,e,c,d=b
+NameError: name 'b' is not defined
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+<class 'tuple'>
+(1, 2, 3, 4, 'abc', 'ser')
+(1, 2, 3, 4, 'abc', 'ser', [1, 2, 3])
+1
+2
+abc
+bcd
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+<class 'tuple'>
+(1, 2, 3, 4, 'abc', 'ser')
+(1, 2, 3, 4, 'abc', 'ser', [1, 2, 3])
+<class 'tuple'>
+1
+2
+abc
+bcd
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+<class 'tuple'>
+(1, 2, 3, 4, 'abc', 'ser')
+(1, 2, 3, 4, 'abc', 'ser', [1, 2, 3])
+<class 'tuple'>
+1
+2
+abc
+bcd
+<class 'int'>
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+<class 'tuple'>
+(1, 2, 3, 4, 'abc', 'ser')
+(1, 2, 3, 4, 'abc', 'ser', [1, 2, 3])
+<class 'tuple'>
+1
+2
+abc
+bcd
+<class 'int'>
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+<class 'tuple'>
+(1, 2, 3, 4, 'abc', 'ser')
+(1, 2, 3, 4, 'abc', 'ser', [1, 2, 3])
+<class 'tuple'>
+1
+2
+abc
+bcd
+<class 'tuple'>
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+<class 'tuple'>
+(1, 2, 3, 4, 'abc', 'ser')
+(1, 2, 3, 4, 'abc', 'ser', [1, 2, 3])
+<class 'tuple'>
+(1, 2, 3, 4, 'abc', 'ser')
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+<class 'tuple'>
+(1, 2, 3, 4, 'abc', 'ser')
+(1, 2, 3, 4, 'abc', 'ser', [1, 2, 3])
+<class 'tuple'>
+(1, 2, 3, 4, 'abc', 'ser')
+(1, 2, 3, 4, 'abc', 'ser', [1, 2, 3])
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+<class 'tuple'>
+(1, 2, 3, 4, 'abc', 'ser')
+(1, 2, 3, 4, 'abc', 'ser', [1, 2, 3])
+<class 'tuple'>
+(1, 2, 3, 4, 'abc', 'ser')
+(1, 2, 3, 4, 'abc', 'ser', [1, 2, 3])
+Traceback (most recent call last):
+  File "C:/Users/vn7/Desktop/Python/Tuple.py", line 24, in <module>
+    del a[3]
+TypeError: 'tuple' object doesn't support item deletion
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+<class 'tuple'>
+(1, 2, 3, 4, 'abc', 'ser')
+(1, 2, 3, 4, 'abc', 'ser', [1, 2, 3])
+<class 'tuple'>
+(1, 2, 3, 4, 'abc', 'ser')
+(1, 2, 3, 4, 'abc', 'ser', [1, 2, 3])
+Traceback (most recent call last):
+  File "C:/Users/vn7/Desktop/Python/Tuple.py", line 24, in <module>
+    del a[3]
+TypeError: 'tuple' object doesn't support item deletion
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+<class 'tuple'>
+(1, 2, 3, 4, 'abc', 'ser')
+(1, 2, 3, 4, 'abc', 'ser', [1, 2, 3])
+<class 'tuple'>
+(1, 2, 3, 4, 'abc', 'ser')
+(1, 2, 3, 4, 'abc', 'ser', [1, 2, 3])
+(1, 2, 3, [4, 9])
+[[1, 2, 3], [4, 9, 6]]
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+<class 'tuple'>
+(1, 2, 3, 4, 'abc', 'ser')
+(1, 2, 3, 4, 'abc', 'ser', [1, 2, 3])
+<class 'tuple'>
+(1, 2, 3, 4, 'abc', 'ser')
+(1, 2, 3, 4, 'abc', 'ser', [1, 2, 3])
+(1, 2, 3, [4, 9])
+[[1, 2, 3], [4, 9, 6]]
+(1, 2, 3, [4, 5], 2, 3, 4)
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+Traceback (most recent call last):
+  File "C:/Users/vn7/Desktop/Python/Tuple.py", line 39, in <module>
+    for i in z:
+NameError: name 'z' is not defined
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+(1, 2, 3, [4, 5], 2, 3, 4)
+1
+2
+3
+[4, 5]
+2
+3
+4
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+(1, 2, 3, [4, 5], 2, 3, 4)
+1
+2
+3
+[4, 5]
+2
+3
+4
+Traceback (most recent call last):
+  File "C:/Users/vn7/Desktop/Python/Tuple.py", line 42, in <module>
+    print(c.count(2))
+NameError: name 'c' is not defined
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+(1, 2, 3, [4, 5], 2, 3, 4)
+1
+2
+3
+[4, 5]
+2
+3
+4
+2
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+(1, 2, 3, [4, 5], 2, 3, 4)
+1
+2
+3
+[4, 5]
+2
+3
+4
+2
+2
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+2
+2
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+2
+2
+Traceback (most recent call last):
+  File "C:/Users/vn7/Desktop/Python/Tuple.py", line 47, in <module>
+    if j in i:
+NameError: name 'j' is not defined
+>>> 
+=============== RESTART: C:/Users/vn7/Desktop/Python/Tuple.py ===============
+2
+2
+1
+2
+3
+abc
+5
+6
+7
+8
+9
+>>> 
+
+
+
+
