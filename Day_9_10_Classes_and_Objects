@@ -1,0 +1,126 @@
+#Object oriented programming
+
+##class Sample():
+##    pass
+
+class Parrot():
+     #Class Variable
+     species="bird"
+
+     #Instance variables
+     def __init__(self,name,age,colour):
+         self.name=name
+         self.age=age
+         self.colour=colour
+
+
+     def sing(self):
+         print("Yes parrot can sing")
+
+     def dance(self):
+         print("Yes parrot can dance")
+
+obj=Parrot("mike",4,"green")
+print(obj.name)
+print(obj.age)
+print(obj.colour)
+
+print(Parrot.species)
+
+obj.dance()
+obj.sing()
+
+#*************************************************************#
+class Sample():
+
+     def __init__(self):
+          print("It is initialized")
+
+a=Sample()
+b=Sample()
+c=Sample()
+
+#*************************************************************#
+class Employee():
+
+     def __init__ (self,name,age):
+          self.name=name
+          self.age=age
+
+     def Display_Info(self):
+          print("Employee name is "+self.name+" and Age is "+ str(self.age))
+
+e1=Employee("Prady",34)
+e1.Display_Info()
+
+#*************************************************************#
+class Employee():
+
+     #Class Variable  
+     emp_count=0
+
+     def __init__ (self,name,salary):
+          self.name=name
+          self.salary=salary
+          Employee.emp_count+=1
+
+     def Display_Details(self):
+          print("Name: ",self.name,":","Salary: ",self.salary)
+
+     def Employee_Count(self):
+          print("Employee COunt= ",Employee.emp_count)
+
+e1=Employee("Prady",34)
+e1.Display_Details()
+e1.Employee_Count()
+
+e2=Employee("Sathya",24)
+e2.Display_Details()
+e2.Employee_Count()
+
+e3=Employee("Tambralli",49)
+e3.Display_Details()
+
+e3.Employee_Count()
+
+
+#*************************************************************#
+class Point():
+
+     def __init__(self,x=0,y=0):
+          self.x=x
+          self.y=y
+
+     def __del__(self):
+          class_name=self.__class__.__name__
+          print("Object Destroyed is ", class_name)
+
+a=Point()
+b=a
+c=a
+
+print(id(a),id(b),id(c))
+del a
+del b
+del c
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
