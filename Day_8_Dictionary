@@ -1,0 +1,210 @@
+#Working with Dictionary
+
+a={}
+print(type(a))
+
+a={1:'apple',2:'mango',3:'pineapple',4:'litchie'}
+print(a)
+
+print(a[1])
+print(a[2])
+print(a.get(3))
+
+#To change the values in a dictionary
+
+car={
+    "brand":"Honda",
+    "model":'City',
+    "year": 2015
+    }
+print(car)
+
+car['year']=2019
+print(car)
+
+car['Mileage']=45000
+print(car)
+
+b={1:'apple',2:'mango',3:'pineapple',4:'litchie'}
+b.clear()
+print(b)
+
+#del b
+print(b)
+
+
+bus=car.copy()
+print(bus)
+
+
+bus['model']="Ashok Leyland"
+
+print(bus)
+
+
+c=sorted(bus)
+print(c)
+
+a={1,4,2,6,8,9}
+c=sorted(a)
+print(a)
+print(c)
+
+
+bus.pop('Mileage')
+print(bus)
+
+
+del bus['model']
+print(bus)
+
+bus.popitem()
+print(bus)
+
+
+#Update Function
+
+car.update({'mileage':45000})
+print(car)
+
+bus={'color':'Red'}
+print(bus)
+
+car.update(bus)
+print(car)
+
+
+#Iterating with Dictionary
+for key in car:
+    print(key)
+for value in car:
+    print(car[value])
+
+for i in car.values():
+    print(i)
+
+for key,value in car.items():
+    print(key,value)
+    
+    
+
+d1={'firstname':'ram','lastname':'raj'}
+d2={'age':34,'company':'DXC'}
+d3={**d1,**d2}
+
+print(d3)
+
+#Nested Dictionary
+
+a={1:{'name':'Prady','age':34,'gender':'male'},2:{'name':'divakar','age':40,'gender':'male'}}
+print(a)
+print(a[1])
+print(a[1]['age'])
+
+print(a[2]['gender'])
+
+a[3]={}
+a[3]['name']='Luna'
+a[3]['age']='Female'
+a[3]['married']='No'
+print(a)
+
+for a_key,a_value in a.items():
+    print("Dictionary",a_key)
+    for key in a_value:
+        print(key,a_value[key])
+
+a=[1,2,3,4,5]
+b=['a','b','c','d','e']
+c=dict(zip(a,b))
+print(c)
+
+
+line='''Look into my eyes and say i love you Look into my eyes and say i love you'''
+words=line.split()
+print(words)
+
+words_count={}
+for i in words:
+    word_count=words.count(i)
+    words_count.update({i:word_count})
+print(words_count)
+    
+    
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+============= RESTART: C:/Users/vn7/Desktop/Python/Dictionary.py =============
+<class 'dict'>
+{1: 'apple', 2: 'mango', 3: 'pineapple', 4: 'litchie'}
+apple
+mango
+pineapple
+{'brand': 'Honda', 'model': 'City', 'year': 2015}
+{'brand': 'Honda', 'model': 'City', 'year': 2019}
+{'brand': 'Honda', 'model': 'City', 'year': 2019, 'Mileage': 45000}
+{}
+{}
+{'brand': 'Honda', 'model': 'City', 'year': 2019, 'Mileage': 45000}
+{'brand': 'Honda', 'model': 'Ashok Leyland', 'year': 2019, 'Mileage': 45000}
+['Mileage', 'brand', 'model', 'year']
+{1, 2, 4, 6, 8, 9}
+[1, 2, 4, 6, 8, 9]
+{'brand': 'Honda', 'model': 'Ashok Leyland', 'year': 2019}
+{'brand': 'Honda', 'year': 2019}
+{'brand': 'Honda'}
+{'brand': 'Honda', 'model': 'City', 'year': 2019, 'Mileage': 45000, 'mileage': 45000}
+{'color': 'Red'}
+{'brand': 'Honda', 'model': 'City', 'year': 2019, 'Mileage': 45000, 'mileage': 45000, 'color': 'Red'}
+brand
+model
+year
+Mileage
+mileage
+color
+Honda
+City
+2019
+45000
+45000
+Red
+Honda
+City
+2019
+45000
+45000
+Red
+brand Honda
+model City
+year 2019
+Mileage 45000
+mileage 45000
+color Red
+{'firstname': 'ram', 'lastname': 'raj', 'age': 34, 'company': 'DXC'}
+{1: {'name': 'Prady', 'age': 34, 'gender': 'male'}, 2: {'name': 'divakar', 'age': 40, 'gender': 'male'}}
+{'name': 'Prady', 'age': 34, 'gender': 'male'}
+34
+male
+{1: {'name': 'Prady', 'age': 34, 'gender': 'male'}, 2: {'name': 'divakar', 'age': 40, 'gender': 'male'}, 3: {'name': 'Luna', 'age': 'Female', 'married': 'No'}}
+Dictionary 1
+name Prady
+age 34
+gender male
+Dictionary 2
+name divakar
+age 40
+gender male
+Dictionary 3
+name Luna
+age Female
+married No
+{1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e'}
+['Look', 'into', 'my', 'eyes', 'and', 'say', 'i', 'love', 'you', 'Look', 'into', 'my', 'eyes', 'and', 'say', 'i', 'love', 'you']
+{'Look': 2, 'into': 2, 'my': 2, 'eyes': 2, 'and': 2, 'say': 2, 'i': 2, 'love': 2, 'you': 2}
+>>> 
+
+    
+
+
+
