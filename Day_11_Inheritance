@@ -1,0 +1,71 @@
+class Person():
+    def __init__(self,fname,lname):
+        self.fname=fname
+        self.lname=lname
+
+    def print_name(self):
+        print(self.fname,self.lname)
+
+class Student(Person):pass
+
+x=Student("Vinay","Kumar")
+x.print_name()
+
+class Student(Person):
+    def __init__(self,fname,lname,year):
+        Person.__init__(self,fname,lname)
+        self.year=year
+
+    def welcome(self):
+        print("Hi",self.fname,self.lname,"Welcome to the year",self.year)
+
+x=Student("Vinay","Kumar",2019)
+x.welcome()
+##############################################################
+
+class Polygon():
+    width=none
+    length=none
+
+    def Set_Values(self,width,length):
+       self.width=width
+       self.length=length
+
+class Triangle(Polygon):
+
+    def area(self):
+       print("Area of triangle",self.width*self.length/2)
+
+class Rectangle(Polygon):
+
+    def area(self):
+        print("Area of rectangelis",self.width*self.length)
+
+
+rect=Rectangle()
+rect.Set_Values(20,30)
+rect.area
+
+###################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
