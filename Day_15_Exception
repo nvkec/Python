@@ -1,0 +1,60 @@
+Exceptions Handling
+from selenium.common.exceptions import *
+
+num1 = float(input("Enter the num1:"))
+num2 = float(input("Enter the num2:"))
+result = None
+
+try:
+    result = num1/num2
+except ZeroDivisionError as e:
+    print("Error", type(e))
+except TypeError as e:
+    print("Error is ", type(e))
+
+print("Result", result)
+print("Done")
+
+Index Exception
+
+str="Vinay"
+try:
+    print(str[5])
+except IndexError as e:
+    print("Error", type(e))
+
+print("Done")
+
+
+Finally block
+num1 = float(input("Enter the num1:"))
+num2 = float(input("Enter the num2:"))
+result = None
+
+try:
+    result = num1/num2
+except ZeroDivisionError as e:
+    print("Error", type(e))
+except TypeError as e:
+    print("Error is ", type(e))
+else:
+    print("No exception is caught")
+finally:
+    print("Finally block is executed")
+
+#Raising Exception
+
+class coffeecup():
+    def __init__(self,temperature):
+        self.temperature=temperature
+
+    def drink_coffee(self):
+        if self.temperature>85:
+            raise Exception("Coffee is too hot")
+        elif self.temperature<65:
+            raise Exception("Coffee is too cold")
+        else:
+            print("Enjoy your coffee")
+
+c= coffeecup(55)
+c.drink_coffee()
