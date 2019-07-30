@@ -1,1 +1,70 @@
+#working with files
+
+fh=open("C:\\Users\\vn7\\Desktop\\Python\\log.txt","w")
+fh.write("Welcome to python training")
+fh.close()
+
+fh=open("C:\\Users\\vn7\\Desktop\\Python\\log.txt","w")
+for line in range(50):
+    fh.write("This is line number %d\n"%(line+1))
+fh.close()
+
+
+fh=open("C:\\Users\\vn7\\Desktop\\Python\\log.txt","a")
+for line in range(50,100):
+    fh.write("This is line number %d\n"%(line+1))
+fh.close()
+
+with open("C:\\Users\\vn7\\Desktop\\Python\\log.txt","w") as fh:
+    for i in range(150):
+        fh.write("This is line number %d\n"%(i+1))
+fh.close()
+
+#Reading the Files
+
+with open("C:\\Users\\vn7\\Desktop\\Python\\log.txt","r") as fh:
+    print(fh.readlines())
+
+
+with open("C:\\Users\\vn7\\Desktop\\Python\\log.txt","r") as fh:
+    a=(fh.readlines())
+    print(a[10])
+
+with open("C:\\Users\\vn7\\Desktop\\Python\\log.txt","r") as fh:
+    for i in fh:
+        a=i.split(" ")
+        print(a)
+        for j in a:
+            print(j)
+
+
+fr=open("C:\\Users\\vn7\\Desktop\\Python\\log.txt","r")
+fw=open("C:\\Users\\vn7\\Desktop\\Python\\log1.txt","w")
+
+for i in fr:
+    fw.write(i)
+fr.close()
+fw.close()
+
+
+import json
+
+a={
+    'name':'Pradyumna',
+    'age':34,
+    'marks':[45,55,66,77,56,67],
+    'result':"Pass"
+}
+
+with open("C:\\Users\\vn7\\Desktop\\Python\\log.json","w") as fh:
+    fh.write(json.dumps(a,indent=3))
+
+with open("C:\\Users\\vn7\\Desktop\\Python\\log.json","r") as fh:
+
+    json_value=json.load(fh)
+    print(json_value['marks'])
+
+
+
+
 
