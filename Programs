@@ -41,8 +41,13 @@
 
 /*Python program to find smallest number in a list*/
         list = [2,3,4,5,1,0,-1]
-
         list.sort()
         print(list)
         print("Smallest of all elements in given list: ", list[0])
         
+
+/*Python program to find largest number in a list*/
+        list = [2,3,4,5,1,0,-1]
+        list.sort()
+        print(list)
+        print("Largest of all elements in given list: ", list[len(list) - 1])
