@@ -7,4 +7,16 @@
               print(list)
 
 
-/*Python program to swap two elements in a list*/
+/*Python program to count occurrences of an element in a list*/
+
+        def noOfOcc(list,x):
+            count = 0;
+            for el in list:
+                if el == x:
+                    count = count+1
+            return count
+
+        x = 4
+        list = [2,3,6,4,10,3,4,]
+        print(noOfOcc(list,x))
+
