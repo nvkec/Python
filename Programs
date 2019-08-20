@@ -28,3 +28,12 @@
         for i in list:
             sum = sum + i
         print("Sum of all elements in given list: ", sum)
+        
+        
+/*Python | Multiply all numbers in the list*/
+        mul = 1
+        list = [1,2,3,4,5]
+
+        for i in list:
+            mul = mul * i
+        print("Product of all elements in given list: ", mul)
