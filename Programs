@@ -37,3 +37,12 @@
         for i in list:
             mul = mul * i
         print("Product of all elements in given list: ", mul)
+
+
+/*Python program to find smallest number in a list*/
+        list = [2,3,4,5,1,0,-1]
+
+        list.sort()
+        print(list)
+        print("Smallest of all elements in given list: ", list[0])
+        
