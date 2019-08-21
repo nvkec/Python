@@ -71,3 +71,20 @@
         N = 4
 
         Nmaxelements(list1, N)
+
+/*Python program to print even numbers in a list*/
+        list = [2, 6, 41, 85, 0, 3, 7, 6, 10]
+
+        for num in list:
+            if num % 2 == 0:
+                print(num)
+                
+/*Python program to print odd numbers in a List*/
+        list1 = [10, 21, 4, 45, 66, 93] 
+
+        # iterating each number in list 
+        for num in list1: 
+
+            # checking condition 
+            if num % 2 != 0: 
+               print(num, end = " ")
