@@ -88,3 +88,36 @@
             # checking condition 
             if num % 2 != 0: 
                print(num, end = " ")
+               
+/*Python program to print all even numbers in a range*/
+          beg = 4 
+          end =10
+
+          for num in range(beg, end+1):
+              if num % 2 ==0:
+                  print(num, end = " ")
+
+                  
+/*Python program to print all odd numbers in a range*/
+        beg = 4 
+        end =10
+
+        for num in range(beg, end+1):
+            if num % 2 !=0:
+                print(num, end = " ")
+
+/*Python program to count Even and Odd numbers in a List*/
+          list = [10, 21, 4, 45, 66, 93, 1]
+
+          e_count, o_count = 0, 0
+
+          for num in list:
+              if num % 2 == 0:
+                  e_count = e_count + 1
+              else:
+                  o_count = o_count + 1
+
+          print("Even numbers in the list: ", e_count)
+          print("Odd numbers in the list: ", o_count)
+          
+  /*Python program to print positive numbers in a list*/
